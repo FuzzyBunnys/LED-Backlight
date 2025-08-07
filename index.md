@@ -2,6 +2,8 @@
 
 My dad, who was looking at slides through a microscope, wanted a way of providing better illumination to them. After a bit of chatting I mentioned I could have a go at designing something that might work for him. To get right to the meat of it, what I built wasn't a good solution, and he ended up picking up something off the shelf that was cheaper and better than what I made, but I learned a bunch! 
 
+INSERT CONTEXT PHOTO - SLIDES ON A MICROSCOPE
+
 My idea was to use the PCB itself as both the structural element to support the slides and circuit, and the FR4 of the PCB as a diffuser for the LEDs providing a backlight. I had seen this [technique](https://www.youtube.com/watch?v=wkFOF71a2bk) used before and wanted to attempt it myself!
 
 INSERT DIMENSIONING SKETCH
@@ -19,5 +21,7 @@ INSERT LED COMPONENT PHOTO
 I've really enjoyed the ergonomics of the new USB-C cables, as you can just plug them in without rotating the cable through [multiple dimensions](https://www.reddit.com/r/mildlyinfuriating/comments/2dwpei/this_repeating_gif_of_a_usb_plugin_process/). So I made the call that the whole setup was going to be powere via USB-C. I picked a USB-C PMIC (Power Management Integrated Circuit), from Texas Instruments, the [TPS25730](https://www.digikey.ca/en/products/detail/texas-instruments/TPS25730DREFR/22147394?so=87849317&content=productdetail_CA&mkt_tok=MDI4LVNYSy01MDcAAAGUdTrnN9mfeJxOdSzYZ-EtBqb6iZSsnAYOixGF4BBJlj9Jc2aqQcGUMyJdwWCFnfoYPYfvJ0gpk0__K-L8dzpxMv-25WeEYa3rXzAYD4Ex) and followed the manufacturer's recommended layout in the datasheet. The PCB's arrived a short while after I ordered them, and I assembled the components. 
 
 INSERT ASSEMBLED PCB PHOTO
+
+I plugged the USB-C cable in and as always, it did not work immediately. Nothing was hot to the touch though (a good sign!) so I commenced troubleshooting. 
 
 INSERT POWERED PCB PHOTO
