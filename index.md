@@ -18,10 +18,9 @@ The circuitry on the PCB itself is nothing particularly complicated. The LED cir
 
 I've really enjoyed the ergonomics of the new USB-C cables, as you can just plug them in without rotating the cable through [multiple dimensions](https://www.reddit.com/r/mildlyinfuriating/comments/2dwpei/this_repeating_gif_of_a_usb_plugin_process/). So I made the call that the whole setup was going to be powered via USB-C. I picked a USB-C PMIC (Power Management Integrated Circuit) from Texas Instruments, the [TPS25730](https://www.digikey.ca/en/products/detail/texas-instruments/TPS25730DREFR/22147394?so=87849317&content=productdetail_CA&mkt_tok=MDI4LVNYSy01MDcAAAGUdTrnN9mfeJxOdSzYZ-EtBqb6iZSsnAYOixGF4BBJlj9Jc2aqQcGUMyJdwWCFnfoYPYfvJ0gpk0__K-L8dzpxMv-25WeEYa3rXzAYD4Ex) and followed the manufacturer's recommended layout in the datasheet. Basically the PMIC negotiates with a USB power supply directly for power at the desired voltage. It wasn't too tricky to configure but it does mean you'll need some sort of USB power brick if you're going to plug it into the wall. The PCB's arrived a short while after I ordered them, and I assembled the components. 
 
-INSERT ASSEMBLED PCB PHOTO
+![Assembled PCB](https://raw.githubusercontent.com/FuzzyBunnys/LED-Backlight/refs/heads/main/IMG_4171.jpg)
 
 I plugged the USB-C cable in and as always, it did not work immediately. Nothing was hot to the touch though (a good sign!) so I commenced troubleshooting. R10 ended up being the culprit, and after dropping this resistance value the whole thing powered on!  
-
-INSERT POWERED PCB PHOTO
+![Powered PCB](https://raw.githubusercontent.com/FuzzyBunnys/LED-Backlight/refs/heads/main/IMG_4222.jpg)
 
 Unfortunately the working prototype was not a success. The core problem is that the LEDs weren't bright enough after shining through the PCB. In addition, my prototype was pretty expensive compared to what you could buy, and you had to be pretty picky about the USB-C power brick you selected to power the whole thing since the LEDs required a decent amount of current. 
