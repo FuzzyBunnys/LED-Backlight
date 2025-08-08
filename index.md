@@ -6,7 +6,7 @@ My dad, who was looking at slides through a microscope, wanted a way of providin
 
 My idea was to use the PCB itself as both the structural element to support the slides and circuit, and the FR4 of the PCB as a diffuser for the LEDs providing a backlight. I had seen this [technique](https://www.youtube.com/watch?v=wkFOF71a2bk) used before and wanted to attempt it myself!
 
-INSERT DIMENSIONING SKETCH
+![Sketches and Writing](https://raw.githubusercontent.com/FuzzyBunnys/LED-Backlight/refs/heads/main/IMG_4951.jpg)
 
 Since the PCB was going to be both the structural element for a microscope slide to rest on top of and a place to mount the circuit, it ended up being quite large. While I thought this wouldn't be a problem, it significantly increased the cost of this 2-layer PCB. I was used to PCB's costing under $10 CAD for most of my (much smaller!) projects. The circuitry on the PCB itself is nothing particularly complicated. The LED circuit is a simple constant current setup that I cribbed from ST [Technical Note TN0026](file:///C:/Users/fuzzy/Downloads/tn0026-led-balancing-circuits-stmicroelectronics.pdf). I used circuit 3 which uses a transistor in conjunction with some diodes to force current through each string of LEDs to match.
 
